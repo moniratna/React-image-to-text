@@ -1,6 +1,6 @@
-![](one.png)
-![](two.png)
-![](three.png)
+![](public/one.png)
+![](public/two.png)
+![](public/three.png)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
