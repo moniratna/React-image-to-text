@@ -4,6 +4,8 @@ import Tesseract from "tesseract.js";
 import TextWrapper from "./components/TextWrapper";
 import ImageWrapper from "./components/ImageWrapper";
 import axios from "axios";
+import Navbar from "./components/Navbar";
+import NewNav from "./components/NewNav";
 
 // create account on imgbb and go to > about section > and get that api key and put it here
 
@@ -51,8 +53,12 @@ function App() {
   }, [imageUrl]);
   console.log(`${process.env.REACT_APP_API_KEY}`);
   return (
+    <div>
+      <NewNav />
     <div className="App">
-      <img src="https://i.ibb.co/LpxDvR1/logo.png" className="logo" alt="" />
+      
+      
+    
       <div className="container">
         {loading && <div className="loader"></div>}
         {text == null ? (
@@ -61,6 +67,7 @@ function App() {
           <TextWrapper text={text} />
         )}
       </div>
+    </div>
     </div>
   );
 }
